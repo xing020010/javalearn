@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+	<Appenders>
+		<!-- <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender"> 
+			<layout class="org.apache.log4j.PatternLayout"> <param name="ConversionPattern" 
+			value="%d %-5p %c.%M:%L - %m%n" /> </layout> </appender> -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<loggers>
+		<!-- specify the logging level for loggers from other libraries -->
+		<logger name="com.opensymphony">
+			<level value="DEBUG" />
+		</logger>
+
+		<logger name="org.apache.struts2">
+			<level value="DEBUG" />
+		</logger>
+
+		<!-- for all other loggers log only info and above log messages -->
+
+		<Root level="INFO">
+			<AppenderRef ref="Console" />
+		</Root>
+	</loggers>
+</Configuration> 
