@@ -32,13 +32,16 @@
 	</s:form>
 	<s:url action="registerInput" var="registerInputLink" />
 	<s:url action="registerInput" var="registerInputLinkCN">
-    <s:param name="request_locale">cn</s:param>
-</s:url>
+		<s:param name="request_locale">cn</s:param>
+	</s:url>
 	<p>
 		<a href="${registerInputLinkCN}">Please register</a> for our prize
 		drawing.
 	</p>
 	<hr />
 	<s:text name="contact" />
+	<hr />
+	<a href="<s:url action="index" namespace="config-browser" />">Launch
+		the configuration browser</a>
 </body>
 </html>
