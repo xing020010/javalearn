@@ -18,7 +18,16 @@
 		<logger name="org.apache.struts2">
 			<level value="DEBUG" />
 		</logger>
-
+		<!-- hibernate -->
+		<logger name="org.hibernate.tool.hbm2ddl">
+			<level value="DEBUG" />
+		</logger>
+		<logger name="org.hibernate.type">
+			<level value="info" />
+		</logger>
+		<logger name="org.hibernate">
+			<level value="DEBUG" />
+		</logger>
 		<!-- for all other loggers log only info and above log messages -->
 
 		<Root level="INFO">

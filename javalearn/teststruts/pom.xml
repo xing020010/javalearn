@@ -6,16 +6,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<build>
-		<finalName>basic_struts</finalName>
-	</build>
+
 	<properties>
 		<!-- Struts2 -->
 		<struts2.version>2.3.24.1</struts2.version>
 		<!-- Logging -->
 		<log4j.version>2.5</log4j.version>
 		<!-- Hibernate / JPA -->
-		<hibernate.version>5.0.6.Final</hibernate.version>
+		<hibernate.version>4.3.11.Final</hibernate.version>
 		<!-- MySQL -->
 		<mysql-connector.version>5.1.38</mysql-connector.version>
 	</properties>
