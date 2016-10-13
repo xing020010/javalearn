@@ -15,4 +15,14 @@
 	</listener>
 	<!-- spring config end -->
 	
+	<!-- CXF config end -->
+    <servlet>
+        <servlet-name>cxf</servlet-name>
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cxf</servlet-name>
+        <url-pattern>/services/*</url-pattern>
+    </servlet-mapping>
+    <!-- CXF config end -->
 </web-app>
